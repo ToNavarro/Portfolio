@@ -1,4 +1,4 @@
-from flask import Flask, abort, render_template, redirect, url_for, flash, request
+from flask import Flask, render_template, redirect, url_for, flash
 from flask_bootstrap import Bootstrap5
 from form import ContactForm
 import smtplib
@@ -37,7 +37,4 @@ def portfolio():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5002)
-
-
-# TODO: Add My Projects
+    app.run(debug=False)
